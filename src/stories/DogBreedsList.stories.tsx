@@ -1,7 +1,9 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { DogBreedsList } from '../DogBreedsList';
+import { DogBreedsList } from '../components';
+import {DogBreedType} from "../models";
+import {getDogBreedsList} from "./storiesData";
 
 export default {
   title: 'Woof-woof/DogBreedsList',
@@ -14,7 +16,11 @@ export default {
 const Template: ComponentStory<typeof DogBreedsList> = (args) => <DogBreedsList {...args} />;
 // export const Primary: ComponentStory<typeof DogBreedsList> = () => <DogBreedsList data="Hello" />;
 
+export const Empty = Template.bind({});
+Empty.args = {
+  data: [],
+}
 export const WithData = Template.bind({});
 WithData.args = {
-  data: 'Hi there',
+  data: getDogBreedsList(),
 }
