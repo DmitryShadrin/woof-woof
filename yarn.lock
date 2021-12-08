@@ -13100,7 +13100,7 @@ prepend-http@^1.0.0:
   resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/prepend-http/-/prepend-http-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc"
   integrity sha1-1PRWKwzjaW5BrFLQ4ALlemNdxtw=
 
-prettier@^2.2.1:
+prettier@2.5.1, prettier@^2.2.1:
   version "2.5.1"
   resolved "https://artylab.expedia.biz/api/npm/public-npm-virtual/prettier/-/prettier-2.5.1.tgz#fff75fa9d519c54cf0fce328c1017d94546bc56a"
   integrity sha1-//dfqdUZxUzw/OMowQF9lFRrxWo=
