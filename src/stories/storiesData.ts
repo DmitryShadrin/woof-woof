@@ -51,8 +51,32 @@ const dogBreed2: DogBreedType = {
   }
 };
 
+const dogBreed3: DogBreedType = {
+  "weight": {
+    "imperial": "44 - 66",
+    "metric": "20 - 30"
+  },
+  "height": {
+    "imperial": "30",
+    "metric": "76"
+  },
+  "id": 3,
+  "name": "African Hunting Dog",
+  "bred_for": "A wild pack animal",
+  "life_span": "11 years",
+  "temperament": "Wild, Hardworking, Dutiful",
+  "origin": "",
+  "reference_image_id": "rkiByec47",
+  "image": {
+    "id": "rkiByec47",
+    "width": 500,
+    "height": 335,
+    "url": "https://cdn2.thedogapi.com/images/rkiByec47.jpg"
+  }
+};
+
 // const dogBreedsListMock: [DogBreedType] = [dogBreed1, dogBreed2];
-const dogBreedsListMock: DogBreedTypes = [dogBreed1, dogBreed2];
+const dogBreedsListMock: DogBreedTypes = [dogBreed1, dogBreed2, dogBreed3];
 
 export const getDogBreed = (): DogBreedType => dogBreedsListMock[0];
 
