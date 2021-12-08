@@ -12,11 +12,8 @@ export const ContentWrapper = ({ data }: DogBreedsListProps) => {
   const [selectedBreeds, setSelectedBreeds] = React.useState<DogBreedTypes>([]);
 
   const selectHandler = (selectedId: number) => {
-    // console.log(`inside Content Wrapper, id=${selectedId}`);
     const selectedBreed = data.filter(({ id }) => id === selectedId);
-    if (!selectedBreeds.some((breed) => breed.id === selectedId)) {
-      setSelectedBreeds([...selectedBreed, ...selectedBreeds]);
-    }
+    setSelectedBreeds([...selectedBreed, selectedBreeds[0]]);
   };
 
   const selectedBreed: DogBreedType | null = selectedBreeds.length ? selectedBreeds[0] : null;
