@@ -1,15 +1,15 @@
 import React from 'react';
-import { Provider, defaultTheme, Button } from '@adobe/react-spectrum';
+import { Provider, defaultTheme } from '@adobe/react-spectrum';
 
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
+  actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
     matchers: {
       color: /(background|color)$/i,
       date: /Date$/,
     },
   },
-}
+};
 
 export const decorators = [
   (Story) => (

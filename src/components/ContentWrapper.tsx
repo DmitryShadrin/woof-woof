@@ -1,9 +1,9 @@
 import React from 'react';
 import { defaultTheme, Flex, Provider, View } from '@adobe/react-spectrum';
 import { DogBreedsList } from './DogBreedsList';
-import {DogBreedType, DogBreedTypes} from '../models';
-import {DogBreedDetails} from "./DogBreedDetails";
-import {DogBreedDetail} from ".";
+import { DogBreedType, DogBreedTypes } from '../models';
+// import {DogBreedDetails} from "./DogBreedDetails";
+import { DogBreedDetail } from '.';
 
 type DogBreedsListProps = {
   data: DogBreedTypes;
@@ -13,10 +13,10 @@ export const ContentWrapper = ({ data }: DogBreedsListProps) => {
   const [selectedBreeds, setSelectedBreeds] = React.useState<DogBreedTypes>([]);
 
   const selectHandler = (selectedId: number) => {
-    console.log(`inside Content Wrapper, id=${selectedId}`);
-    const selectedBreed = data.filter(({id}) => id === selectedId);
+    // console.log(`inside Content Wrapper, id=${selectedId}`);
+    const selectedBreed = data.filter(({ id }) => id === selectedId);
     if (!selectedBreeds.some((breed) => breed.id === selectedId)) {
-      setSelectedBreeds([...selectedBreed, ...selectedBreeds])
+      setSelectedBreeds([...selectedBreed, ...selectedBreeds]);
     }
   };
 

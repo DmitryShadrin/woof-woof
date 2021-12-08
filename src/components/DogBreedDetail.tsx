@@ -1,12 +1,12 @@
 import React from 'react';
-import { Cell, Column, Image, Row, TableBody, TableHeader, TableView} from '@adobe/react-spectrum'
+import {Cell, Column, Header, Image, Row, TableBody, TableHeader, TableView} from '@adobe/react-spectrum'
 import {DogBreedType} from '../models';
 
 export const DogBreedDetail = (props: DogBreedType) => {
   const { id, name, image, bred_for } = props;
 
   return <>
-    <h1>Breed:</h1>
+    <Header>Breed: {name}</Header>
     <TableView>
       <TableHeader>
         <Column>Parameter</Column>

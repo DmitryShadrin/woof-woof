@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cell, Row } from '@adobe/react-spectrum';
+// import { Cell, Row } from '@adobe/react-spectrum';
 import { DogBreedsListItemType } from '../models';
 
 export const DogBreedsListItem = (props: DogBreedsListItemType) => {

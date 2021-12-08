@@ -1,4 +1,3 @@
-import {DogBreedType} from './';
+import { DogBreedType } from './';
 
-export interface DogBreedTypes extends Array<DogBreedType> {
-}
+export interface DogBreedTypes extends Array<DogBreedType> {}
