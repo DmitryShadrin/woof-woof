@@ -35,7 +35,7 @@ export const DogBreedDetail = (props: DogBreedType) => {
         </TableBody>
       </TableView>
       <Flex width="100%" height="400px" justifyContent="center">
-        <Image src={image.url} alt={name} objectFit="cover" />
+        <Image src={image.url} alt={name} objectFit="cover" key={image.url} />
       </Flex>
     </>
   );

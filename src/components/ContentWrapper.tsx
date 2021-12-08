@@ -2,7 +2,6 @@ import React from 'react';
 import { defaultTheme, Flex, Provider, View } from '@adobe/react-spectrum';
 import { DogBreedsList } from './DogBreedsList';
 import { DogBreedType, DogBreedTypes } from '../models';
-// import {DogBreedDetails} from "./DogBreedDetails";
 import { DogBreedDetail } from '.';
 
 type DogBreedsListProps = {
