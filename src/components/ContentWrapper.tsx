@@ -27,10 +27,10 @@ export const ContentWrapper = ({ data }: DogBreedsListProps) => {
       <Flex direction="column" gap={'size-25'}>
         {/*<View backgroundColor="celery-600" height="size-800" />*/}
         <Flex direction="row" height="100%" gap="size-25">
-          <View backgroundColor="indigo-600" width="size-2000" height="100%">
+          <View width="size-2000" height="100%">
             <DogBreedsList data={data} onSelect={selectHandler} />
           </View>
-          <View backgroundColor="seafoam-600" flex>
+          <View flex>
             {/*{selectedBreed && <DogBreedDetails {...selectedBreed} />}*/}
             {/*{selectedBreed && <DogBreedDetails data={selectedBreeds} />}*/}
             {selectedBreed && <DogBreedDetail {...selectedBreed} />}

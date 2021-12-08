@@ -11,8 +11,6 @@ import {DogBreedsListType, DogBreedTypes} from '../models';
 //   data: DogBreedTypes,
 // }
 
-// export const DogBreedsList: React.FC<{data: [DogBreedType] | []}> = ({ data}) => {
-// export const DogBreedsList: React.FC<{ data: DogBreedTypes }> = ({ data }) => {
 export const DogBreedsList = ({ data, onSelect }: DogBreedsListType) => {
   const handleSelect = (id: number) => {
     console.log(`selected ${id}`)
@@ -21,22 +19,7 @@ export const DogBreedsList = ({ data, onSelect }: DogBreedsListType) => {
 
   const renderRows = () => {
     return data.map((breed) => {
-      // return <DogBreedDetails key={breed.id} {...breed} />;
       return <DogBreedsListItem key={breed.id} {...breed} onSelect={handleSelect} />;
-      // return (
-        // <Item key={breed.id}>
-        //   {/*<span>{breed.id}</span>*/}
-        //   <span>{breed.name}</span>
-        // </Item>
-      // <Row key={breed.id}>
-      //     <Cell>{breed.id}</Cell>
-      //     <Cell>{breed.name}</Cell>
-      //   </Row>
-      // <div key={breed.id}>
-      //     <span>{breed.id}</span>
-      //     <span>{breed.name}</span>
-      //   </div>
-      // );
     });
   };
 
