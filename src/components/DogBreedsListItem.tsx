@@ -10,7 +10,8 @@ export const DogBreedsListItem = (props: DogBreedsListItemType) => {
   }
 
   return (
-    <div onClick={() => handleSelect(id)}>{id}-{name}</div>
+    <div style={{cursor: "pointer"}} onClick={() => handleSelect(id)}>{name}</div>
+    // <option onClick={() => handleSelect(id)}>{id}-{name}</option>
     // <Row>
     //   <Cell>{id}</Cell>
     //   <Cell>{name}</Cell>
