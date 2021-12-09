@@ -14,7 +14,7 @@ export const DogBreedsList = ({ data, onSelect }: DogBreedsListType) => {
   };
 
   return (
-    <ListBox items={data} selectionMode="single" onSelectionChange={(selected) => handleSelectListBox(selected)}>
+    <ListBox flex items={data} selectionMode="single" onSelectionChange={(selected) => handleSelectListBox(selected)}>
       {(item) => <Item key={item.id}>{item.name}</Item>}
     </ListBox>
   );
