@@ -20,7 +20,7 @@ export const DogBreedDetail = (props: DogBreedType) => {
       <Header>Breed: {name}</Header>
       <TableView key={name}>
         <TableHeader>
-          <Column>Parameter</Column>
+          <Column maxWidth="30%">Parameter</Column>
           <Column>Value</Column>
         </TableHeader>
         <TableBody>
