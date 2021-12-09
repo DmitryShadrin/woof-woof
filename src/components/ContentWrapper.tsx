@@ -20,20 +20,30 @@ export const ContentWrapper = ({ data }: DogBreedsListProps) => {
 
   return (
     <Provider theme={defaultTheme}>
-      <Flex direction="column" gap={'size-25'}>
-        {/*<View backgroundColor="celery-600" height="size-800" />*/}
-        <Flex direction="row" height="100%" gap="size-25">
-          <View width="size-2000" height="100%">
+      <Flex direction="row" height="100vh" gap="size-100" width="100%">
+        <Flex direction="column" gap="size-100" width="40%">
+          <View backgroundColor="gray-100" width="100%" height="100%">
             <DogBreedsList data={data} onSelect={selectHandler} />
           </View>
-          <View flex>
-            {/*{selectedBreed && <DogBreedDetails {...selectedBreed} />}*/}
-            {/*{selectedBreed && <DogBreedDetails data={selectedBreeds} />}*/}
-            {selectedBreed && <DogBreedDetail {...selectedBreed} />}
-          </View>
         </Flex>
-        {/*<View backgroundColor="magenta-600" height="size-800" />*/}
+        <Flex direction="column" gap="size-100" width="60%">
+          {/*<View backgroundColor="gray-300">*/}
+            {selectedBreed && <DogBreedDetail {...selectedBreed} />}
+          {/*</View>*/}
+        </Flex>
       </Flex>
+      {/*<Flex direction="column" gap={'size-25'}>*/}
+      {/*  /!*<View backgroundColor="celery-600" height="size-800" />*!/*/}
+      {/*  <Flex direction="row" height="100%" gap="size-25">*/}
+      {/*    <View height="100%">*/}
+      {/*    </View>*/}
+      {/*    <View flex>*/}
+      {/*      /!*{selectedBreed && <DogBreedDetails {...selectedBreed} />}*!/*/}
+      {/*      /!*{selectedBreed && <DogBreedDetails data={selectedBreeds} />}*!/*/}
+      {/*    </View>*/}
+      {/*  </Flex>*/}
+      {/*  /!*<View backgroundColor="magenta-600" height="size-800" />*!/*/}
+      {/*</Flex>*/}
     </Provider>
   );
 };
