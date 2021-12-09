@@ -18,7 +18,7 @@ export const DogBreedDetail = (props: DogBreedType) => {
   return (
     <>
       <Header>Breed: {name}</Header>
-      <TableView key={name}>
+      <TableView key={name} aria-label={`${name} dog info`} overflowMode="wrap">
         <TableHeader>
           <Column maxWidth="30%">Parameter</Column>
           <Column>Value</Column>

@@ -14,7 +14,13 @@ export const DogBreedsList = ({ data, onSelect }: DogBreedsListType) => {
   };
 
   return (
-    <ListBox flex items={data} selectionMode="single" onSelectionChange={(selected) => handleSelectListBox(selected)}>
+    <ListBox
+      flex
+      items={data}
+      selectionMode="single"
+      onSelectionChange={(selected) => handleSelectListBox(selected)}
+      aria-label="Dog breeds"
+    >
       {(item) => <Item key={item.id}>{item.name}</Item>}
     </ListBox>
   );
