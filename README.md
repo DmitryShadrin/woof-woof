@@ -1,5 +1,15 @@
 # Woof-Woof dog catalog
-This a work in progress! Not complete yet.
+Application that catalogs the different breeds of dogs.
+
+## Capabilities
+- Lists all available breeds of dogs
+- Has ability to select specific breed to obtain more information (dog profile and image)
+- Allows a user to compare different dog breeds
+
+## Technical info
+- Uses [TypeScript](https://www.typescriptlang.org/)
+- Uses [React Spectrum components](https://react-spectrum.adobe.com/)
+- Uses [Dog API](https://thedogapi.com/)
 
 ## Available Scripts
 

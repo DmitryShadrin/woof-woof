@@ -1,6 +1,6 @@
 import React from 'react';
 import { get } from 'lodash';
-import { defaultTheme, Flex, Provider } from '@adobe/react-spectrum';
+import {defaultTheme, Flex, Provider, View} from '@adobe/react-spectrum';
 import { DogBreedTypes } from '../models';
 import { DogBreedDetail, DogBreedsList } from '.';
 
@@ -32,6 +32,11 @@ export const ContentWrapper = ({ data }: DogBreedsListProps) => {
           <Flex direction="column" width="49%" minWidth="400px">
             {previouslySelectedBreed && <DogBreedDetail {...previouslySelectedBreed} />}
           </Flex>
+          {!selectedBreed && (
+            <Flex>
+              <View>⬅︎ Please select a dog breed</View>
+            </Flex>
+          )}
         </Flex>
       </Flex>
     </Provider>
