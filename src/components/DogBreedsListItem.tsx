@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Cell, Row } from '@adobe/react-spectrum';
 import { DogBreedsListItemType } from '../models';
 
 export const DogBreedsListItem = (props: DogBreedsListItemType) => {
@@ -11,10 +10,5 @@ export const DogBreedsListItem = (props: DogBreedsListItemType) => {
 
   return (
     <div style={{cursor: "pointer"}} onClick={() => handleSelect(id)}>{name}</div>
-    // <option onClick={() => handleSelect(id)}>{id}-{name}</option>
-    // <Row>
-    //   <Cell>{id}</Cell>
-    //   <Cell>{name}</Cell>
-    // </Row>
   );
 };
