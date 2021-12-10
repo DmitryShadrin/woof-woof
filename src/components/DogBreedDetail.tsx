@@ -34,7 +34,7 @@ export const DogBreedDetail = (props: DogBreedType) => {
           {getRow('Origin', 'origin')}
         </TableBody>
       </TableView>
-      <Flex width="100%" justifyContent="center" alignItems={"start"}>
+      <Flex width="100%" justifyContent="center">
         <Image src={image.url} alt={name} objectFit="scale-down" key={image.url} marginTop="5px" height="400px" />
       </Flex>
     </>

@@ -4,7 +4,6 @@ import { DogBreedsListType } from '../models';
 
 export const DogBreedsList = ({ data, onSelect }: DogBreedsListType) => {
   const handleSelectListBox = (keys: 'all' | Set<Key>) => {
-    console.log(`handleSelectListBox`);
     const arr = Array.from(keys);
     if (arr.length) {
       const firstKey = arr[0];
